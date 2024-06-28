@@ -1,0 +1,58 @@
+*,
+*::before,
+*::after {
+	box-sizing: content-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	/*Fonts*/
+	--Inter: "Inter", sans-serif;
+
+	/*Colors*/
+	--Color1: #fffcf5;
+	--Color2: #1d1d1d;
+	--Color3: #ffcf52;
+	--Color4: #ff4c25;
+	--Color5: #fff0c9;
+}
+
+.menu .container {
+	.menubg {
+		height: 500px;
+		img {
+			width: 100%;
+			transform: translateY(-600px);
+			pointer-events: none;
+			user-select: none;
+			transition: all 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+		}
+	}
+	.menubg:hover {
+		img {
+			width: 100%;
+			transform: translateY(-300px);
+			pointer-events: none;
+			user-select: none;
+		}
+	}
+}
+
+.notification {
+    font-family: var(--Inter);
+    font-weight: bolder;
+	text-align: center;
+    color: var(--Color1);
+	background-color: var(--Color4);
+    padding: 20px;
+
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+
+    z-index: 10;
+}
