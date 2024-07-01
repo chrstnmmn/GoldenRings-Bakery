@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-		<title>GoldenRings</title>
+		<title>GoldenRings Bakery - Home Page</title>
 
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1,0" />
@@ -14,33 +14,36 @@
 		<link rel="stylesheet" href="style.css" />
 
 		<!--Fonts-->
+		<!--Inter Font-Inter Font--Inter Font--Inter Font--Inter Font--Inter Font--Inter Font--Inter Font--Inter Font--->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+		<!--Aref Ruqaa Font-Aref Ruqaa Font-Aref Ruqaa Font-Aref Ruqaa Font-Aref Ruqaa Font-Aref Ruqaa Font-Aref Ruqaa Font-->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet" />
 	</head>
 	<body>
-		<header>
-			<section class="header">
-				<div class="wrapper">
-					<div class="logo">
-						<img src="./imgsource/GoldenRings Logo.png" />
-					</div>
-					<div class="container">
-						<a href="./shop.html">Shop</a>
-						<a href="./about.html">About</a>
-						<a href="./login.html">Login</a>
-						<a href="./signup.html">Sign up</a>
-					</div>
+		<section class="header">
+			<div class="wrapper">
+				<div class="logo">
+					<img src="./imgsource/GoldenRings Logo.png" />
 				</div>
-			</section>
-		</header>
+				<div class="container">
+					<a href="./shop.html">Shop</a>
+					<a href="./about.html">About</a>
+					<a href="./login.html">Login</a>
+					<a href="./signup.html">Sign up</a>
+				</div>
+			</div>
+		</section>
 
 		<section class="Hero">
 			<div class="herocontainer">
 				<img src="./imgsource/HeroImage.png" />
 				<div class="heroCTA">
 					<h1>Discover culinary brilliance where every ring is a masterpiece.</h1>
-					<button>Order now!</button>
+					<button onclick="go_to_Shop()">Order now!</button>
 				</div>
 			</div>
 		</section>
@@ -91,7 +94,7 @@
 				<div class="ctawrapper">
 					<h1>Craving for some donuts?</h1>
 					<p>Order now for a symphony of Gourmet Delights!</p>
-					<button>Order now!</button>
+					<button onclick="go_to_Shop()">Order now!</button>
 				</div>
 			</div>
 		</section>
@@ -116,14 +119,14 @@
 				<div class="item02">
 					<div class="address">
 						<h1>Visit us!</h1>
-						<a href="https://maps.app.goo.gl/fSu5QzwMyc3ATxiC8">123 Flavor Street, Sweetland District, Metro Manila</a>
+						<a href="https://maps.app.goo.gl/fxvqmbsrECkPRJNZ6">123 Flavor Street, Sweetland District, Metro Manila</a>
 					</div>
 					<div class="social">
 						<p>Connect with us on social media to stay updated on all things GoldenRings in the Philippines.</p>
 						<div class="iconcontainer">
-							<img src="./imgsource/insta.png" id="instagramlink" />
-							<img src="./imgsource/twitter.png" id="twitterlink" />
-							<img src="./imgsource/facebook.png" id="facebooklink" />
+							<img src="./imgsource/insta.png" id="instagramlink" onclick="go_to_instagram()" />
+							<img src="./imgsource/twitter.png" id="twitterlink" onclick="go_to_twitter()" />
+							<img src="./imgsource/facebook.png" id="facebooklink" onclick="go_to_facebook()" />
 						</div>
 					</div>
 				</div>
@@ -133,5 +136,8 @@
 				</div>
 			</div>
 		</section>
+
+		<!--Script-Script-Script-Script-Script-Script-Script-Script-Script-Script-Script-Script-Script-Script-->
+		<script src="./script.js"></script>
 	</body>
 </html>

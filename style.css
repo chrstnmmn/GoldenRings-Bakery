@@ -12,6 +12,7 @@
 :root {
 	/*Fonts*/
 	--Inter: "Inter", sans-serif;
+	--Aref: "Aref Ruqaa", serif;
 
 	/*Colors*/
 	--Color1: #fffcf5;
@@ -27,51 +28,55 @@ body {
 	/*background-attachment: fixed;*/
 }
 
-.header .wrapper {
-	z-index: 2;
-	background-color: var(--Color3);
+.header {
+	.wrapper {
+		z-index: 10;
+		background-color: var(--Color3);
 
-	width: 100%;
-	height: 92px;
+		width: 100%;
+		height: 92px;
 
-	box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.5);
+		box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.5);
 
-	position: fixed;
-	top: 0;
+		position: fixed;
+		top: 0;
 
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	gap: 1000px;
-
-	img {
-		width: 250px;
-		height: auto;
-		pointer-events: none;
-		user-select: none;
-	}
-	.container {
 		display: flex;
 		flex-direction: row;
-		align-content: flex-start;
-		gap: 40px;
+		justify-content: space-around;
+		align-items: center;
+		gap: 150px;
 
-		a {
-			/*Text Style*/
-			color: var(--Color1);
-			text-align: center;
-			font-family: var(--Inter);
-			text-decoration: none;
-			font-size: 24px;
-			font-style: normal;
-			font-weight: 500;
-			line-height: normal;
-			transition: 0.2s ease;
+		img {
+			display: block;
+
+			width: 250px;
+			height: auto;
+			pointer-events: none;
+			user-select: none;
 		}
+		.container {
+			display: flex;
+			flex-direction: row;
+			align-content: flex-start;
+			gap: 40px;
 
-		a:hover {
-			color: #ff4c25;
+			a {
+				/*Text Style*/
+				color: var(--Color1);
+				text-align: center;
+				font-family: var(--Inter);
+				text-decoration: none;
+				font-size: 24px;
+				font-style: normal;
+				font-weight: 500;
+				line-height: normal;
+				transition: 0.2s ease;
+			}
+
+			a:hover {
+				color: #ff4c25;
+			}
 		}
 	}
 }
@@ -84,6 +89,7 @@ body {
 	justify-content: center;
 
 	img {
+		display: block;
 		pointer-events: none;
 		user-select: none;
 		width: 100%;
@@ -164,6 +170,7 @@ body {
 			gap: 42px;
 
 			img {
+				display: block;
 				pointer-events: none;
 				user-select: none;
 				width: 620px;
@@ -207,6 +214,7 @@ body {
 			gap: 42px;
 
 			img {
+				display: block;
 				pointer-events: none;
 				user-select: none;
 				width: 620px;
@@ -276,6 +284,8 @@ body {
 			img {
 				width: 100%;
 
+				display: block;
+
 				pointer-events: none;
 				user-select: none;
 			}
@@ -307,7 +317,6 @@ body {
 				line-height: normal;
 			}
 			button {
-
 				margin-top: 30px;
 
 				width: 280px;
@@ -354,6 +363,7 @@ body {
 	.footerdesign {
 		grid-area: 1/1;
 		img {
+			display: block;
 			pointer-events: none;
 			user-select: none;
 			width: 100%;
@@ -382,6 +392,7 @@ body {
 		width: 515px;
 
 		img {
+			display: block;
 			user-select: none;
 			height: 84px;
 			pointer-events: none;
@@ -394,6 +405,7 @@ body {
 			font-style: normal;
 			font-weight: 300;
 			line-height: normal;
+			text-align: justify;
 		}
 	}
 	.item02 {
@@ -450,13 +462,16 @@ body {
 				flex-direction: row;
 				gap: 20px;
 
-				transition: all 0.1s ease;
+				transition: all 1s ease-in-out;
 
 				img {
 					max-width: 6%;
 				}
+				img:hover {
+					cursor: pointer;
+				}
 				img:active {
-					transform: translateY(5px);
+					transform: scale(0.9);
 				}
 			}
 		}
@@ -475,371 +490,5 @@ body {
 		font-style: normal;
 		font-weight: 800;
 		line-height: normal;
-	}
-}
-
-/********************************************/
-/*				Sign up Page				*/
-
-.signup .wrapper {
-	display: flex;
-	justify-content: center;
-	align-content: center;
-
-	padding-top: 180px;
-
-	.container {
-		display: grid;
-		grid-template-columns: 400px 1fr;
-		grid-template-rows: 1fr;
-		column-gap: 35px;
-
-		width: 922px;
-		height: 619px;
-
-		border-radius: 20px;
-		background: #f4f4f4;
-
-		/* BoxShadow */
-		box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.25);
-
-		overflow: hidden;
-
-		.item01 {
-			overflow: hidden;
-			img {
-				width: 450px;
-				height: auto;
-				transform: translateX(-50px) translateY(-50px);
-
-				pointer-events: none;
-				user-select: none;
-			}
-		}
-
-		.item02 {
-			width: 450px;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-
-			gap: 15px;
-
-			.usersignup {
-				display: flex;
-				flex-direction: column;
-				gap: 20px;
-
-				h1 {
-					color: var(--Color4);
-					font-family: var(--Inter);
-					font-size: 64px;
-					font-style: normal;
-					font-weight: 900;
-					line-height: normal;
-				}
-
-				h4 {
-					color: #1d1d1d;
-					font-family: var(--Inter);
-					font-size: 20px;
-					font-style: normal;
-					font-weight: 300;
-					line-height: normal;
-				}
-
-				input[type="email"],
-				input[type="password"] {
-					width: 361px;
-					height: 45px;
-
-					border-radius: 10px;
-					background: var(--Color1);
-					border: none;
-					box-sizing: border-box;
-					margin-top: 10px;
-					padding: 0 18px;
-
-					color: var(--Color4);
-					font-family: var(--Inter);
-					font-size: 20px;
-					font-weight: 500;
-
-					accent-color: var(--Color4);
-				}
-			}
-
-			h3 {
-				color: var(--Color4);
-				text-align: center;
-				font-family: var(--Inter);
-				font-size: 16px;
-				font-style: normal;
-				font-weight: 500;
-				line-height: normal;
-			}
-
-			button {
-				width: 150px;
-				height: 40px;
-
-				border-radius: 10px;
-				border: none;
-				background: #ff4c25;
-				box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
-
-				/*  Text style  */
-				color: var(--Color1);
-				text-align: center;
-				font-family: var(--Inter);
-				font-size: 20px;
-				font-style: normal;
-				font-weight: 600;
-				line-height: normal;
-
-				transition: all 0.08s ease-in-out;
-			}
-
-			button:hover {
-				transform: translateY(-5px);
-				box-shadow: 0px 5px 0px 0px var(--Color3);
-			}
-
-			button:active {
-				background-color: var(--Color3);
-				transform: translateY(5px);
-				box-shadow: 0px 0px 0px 0px var(--Color3);
-			}
-
-			a {
-				color: var(--Color4);
-				text-align: center;
-				font-family: var(--Inter);
-				font-size: 16px;
-				font-style: normal;
-				font-weight: 500;
-				line-height: normal;
-				text-decoration-line: underline;
-
-				margin-top: 50px;
-			}
-
-			.iconcontainer {
-				align-self: center;
-
-				display: flex;
-				flex-direction: row;
-				justify-content: center;
-				align-items: center;
-				gap: 20px;
-
-				img {
-					width: 35px;
-				}
-			}
-		}
-	}
-}
-
-/********************************************/
-/*				Login Page				*/
-
-.login .wrapper {
-	display: flex;
-	justify-content: center;
-	align-content: center;
-
-	padding-top: 180px;
-
-	.container {
-		display: grid;
-		grid-template-columns: 400px 1fr;
-		grid-template-rows: 1fr;
-		column-gap: 35px;
-
-		width: 922px;
-		height: 619px;
-
-		border-radius: 20px;
-		background: #f4f4f4;
-
-		/* BoxShadow */
-		box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.25);
-
-		overflow: hidden;
-
-		.item01 {
-			overflow: hidden;
-			img {
-				width: 500px;
-				height: auto;
-				transform: translateX(-65px);
-
-				pointer-events: none;
-				user-select: none;
-			}
-		}
-
-		.item02 {
-			width: 450px;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-
-			gap: 15px;
-
-			.usersignup {
-				display: flex;
-				flex-direction: column;
-				gap: 20px;
-
-				h1 {
-					color: var(--Color4);
-					font-family: var(--Inter);
-					font-size: 40px;
-					font-style: normal;
-					font-weight: 900;
-					line-height: normal;
-				}
-
-				h4 {
-					color: #1d1d1d;
-					font-family: var(--Inter);
-					font-size: 20px;
-					font-style: normal;
-					font-weight: 300;
-					line-height: normal;
-				}
-
-				input[type="email"],
-				input[type="password"] {
-					width: 361px;
-					height: 45px;
-
-					border-radius: 10px;
-					background: var(--Color1);
-					border: none;
-					box-sizing: border-box;
-					margin-top: 10px;
-					padding: 0 18px;
-
-					color: var(--Color4);
-					font-family: var(--Inter);
-					font-size: 20px;
-					font-weight: 500;
-
-					accent-color: var(--Color4);
-				}
-			}
-
-			.rememberuser {
-				display: flex;
-				flex-direction: row;
-				justify-content: center;
-				gap: 100px;
-
-				.rememberme {
-					display: flex;
-					flex-direction: row;
-					align-items: center;
-					gap: 5px;
-
-					input[type="checkbox"] {
-						accent-color: var(--Color4);
-					}
-					p {
-						color: var(--Color2);
-						font-family: var(--Inter);
-						font-size: 14px;
-						font-style: normal;
-						font-weight: 300;
-						line-height: normal;
-					}
-				}
-
-				.forgotpass {
-					a {
-						color: var(--Color2);
-						font-family: var(--Inter);
-						font-size: 14px;
-						font-style: normal;
-						font-weight: 300;
-						line-height: normal;
-						text-decoration: none;
-					}
-				}
-			}
-
-			h3 {
-				color: var(--Color4);
-				text-align: center;
-				font-family: var(--Inter);
-				font-size: 16px;
-				font-style: normal;
-				font-weight: 500;
-				line-height: normal;
-			}
-
-			button {
-				width: 150px;
-				height: 40px;
-
-				border-radius: 10px;
-				border: none;
-				background: #ff4c25;
-				box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
-
-				/*  Text style  */
-				color: var(--Color1);
-				text-align: center;
-				font-family: var(--Inter);
-				font-size: 20px;
-				font-style: normal;
-				font-weight: 600;
-				line-height: normal;
-
-				transition: all 0.08s ease-in-out;
-			}
-
-			button:hover {
-				transform: translateY(-5px);
-				box-shadow: 0px 5px 0px 0px var(--Color3);
-			}
-
-			button:active {
-				background-color: var(--Color3);
-				transform: translateY(5px);
-				box-shadow: 0px 0px 0px 0px var(--Color3);
-			}
-
-			a {
-				color: var(--Color4);
-				text-align: center;
-				font-family: var(--Inter);
-				font-size: 16px;
-				font-style: normal;
-				font-weight: 500;
-				line-height: normal;
-				text-decoration-line: underline;
-
-				margin-top: 50px;
-			}
-
-			.iconcontainer {
-				align-self: center;
-
-				display: flex;
-				flex-direction: row;
-				justify-content: center;
-				align-items: center;
-				gap: 20px;
-
-				img {
-					width: 35px;
-				}
-			}
-		}
 	}
 }

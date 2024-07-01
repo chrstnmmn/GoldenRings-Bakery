@@ -1,0 +1,10 @@
+@import url("style.css");
+
+@keyframes donutAnimation {
+	from {
+		transform: translateY(-5px);
+	}
+	100% {
+		transform: translateY(5px);
+	}
+}
