@@ -20,6 +20,9 @@ $_Main1: #ffbb00;
 $_Main2: #ff5356;
 $Background: #fff0c9;
 
+// shapes 
+$BorderRd_Sm: 1rem;
+
 /*Effects*/
 $Shadow_bottom: 0px 4px 0px 0px #f4f4f4, 0px 12px 0px 0px #ff5356,
 	0px 24px 31.5px 0px rgba(255, 83, 86, 0.25);
@@ -125,7 +128,7 @@ body {
 				width: 100%;
 				pointer-events: none;
 				user-select: none;
-				// transform: translateY(-8rem);
+				transform: translateY(-8rem);
 			}
 		}
 		.overlay {
@@ -208,7 +211,7 @@ body {
 					grid-area: 1/1;
 					pointer-events: none;
 					user-select: none;
-					width: 100vw;
+					max-width: 100%;
 				}
 				.donut1 {
 					transform: translateY(-80px);
@@ -252,7 +255,7 @@ body {
 		height: 515.62px;
 		transform: rotate(1.5deg);
 
-		border-radius: 20px;
+		border-radius: $BorderRd_Sm;
 		background: $_Main1;
 
 		/* Elements */
@@ -268,7 +271,7 @@ body {
 		width: 1165px;
 		height: 468px;
 
-		border-radius: 10px;
+		border-radius: $BorderRd_Sm;
 		background: $Accent1;
 
 		/* BoxShadow */
