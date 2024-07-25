@@ -125,7 +125,7 @@ body {
   width: 20rem;
   height: 3.5rem;
   margin-top: 20px;
-  border-radius: 6rem;
+  border-radius: 100rem;
   border: 0.3rem solid #f4f4f4;
   background: #ff5356;
   /* Pink Shadow */
@@ -242,7 +242,7 @@ body {
   width: 215px;
   height: 40px;
   margin-top: 10px;
-  border-radius: 13px;
+  border-radius: 100rem;
   border: 3px solid #f4f4f4;
   background: #ff5356;
   /* Pink Shadow */
@@ -258,8 +258,6 @@ body {
 }
 .flashcards .wrapper .label button:hover {
   background: #ffbb00;
-  border-radius: 13px;
-  border: 3px solid #f4f4f4;
   box-shadow: 0px 8px 0px 0px var(--Accent-2, #f4f4f4), 0px 0px 21.6px 0px #ffbb00;
   transform: translateY(-6px);
   cursor: pointer;

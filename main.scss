@@ -22,6 +22,7 @@ $Background: #fff0c9;
 
 // shapes 
 $BorderRd_Sm: 1rem;
+$BorderRd_Btn: 100rem;
 
 /*Effects*/
 $Shadow_bottom: 0px 4px 0px 0px #f4f4f4, 0px 12px 0px 0px #ff5356,
@@ -182,7 +183,7 @@ body {
 					height: 3.5rem;
 					margin-top: 20px;
 
-					border-radius: 6rem;
+					border-radius: $BorderRd_Btn;
 					border: .3rem solid $Accent1;
 					background: $_Main2;
 					/* Pink Shadow */
@@ -317,7 +318,7 @@ body {
 				height: 40px;
 				margin-top: 10px;
 
-				border-radius: 13px;
+				border-radius: $BorderRd_Btn;
 				border: 3px solid $Accent1;
 				background: $_Main2;
 
@@ -335,8 +336,6 @@ body {
 			}
 			button:hover {
 				background: $_Main1;
-				border-radius: 13px;
-				border: 3px solid $Accent1;
 				box-shadow: $hover_button_yellow;
 				transform: translateY(-6px);
 				cursor: pointer;
