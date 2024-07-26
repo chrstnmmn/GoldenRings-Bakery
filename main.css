@@ -39,7 +39,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 55vw;
+  gap: 65vw;
 }
 .header .wrapper img {
   max-width: 15rem;
@@ -315,7 +315,7 @@ body {
 }
 
 .ratings {
-  margin-top: 250px;
+  margin-top: 400px;
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
