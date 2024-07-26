@@ -441,4 +441,66 @@ body {
   box-shadow: 4px 4px 0px 0px #f4f4f4, 12px 12px 0px 0px #ff5356, 0px 0px 29.2px 0px rgba(255, 83, 86, 0.25), 0px 24px 31.5px 0px rgba(255, 83, 86, 0.25);
 }
 
+.wingman {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  margin-top: 400px;
+}
+.wingman .wrapper,
+.wingman .bg,
+.wingman .title {
+  /*Centering the container*/
+  grid-area: 1/1;
+  justify-self: center;
+  /*Centering the container*/
+}
+.wingman .wrapper {
+  width: 1167px;
+  height: 537px;
+  border-radius: 1rem;
+  background: #f4f4f4;
+  /* BoxShadow */
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.25);
+}
+.wingman .bg {
+  z-index: -1;
+}
+.wingman .bg img {
+  pointer-events: none;
+  user-select: none;
+}
+.wingman .title {
+  transform: translateY(290px);
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+}
+.wingman .title h3,
+.wingman .title img {
+  /*Centering the container*/
+  grid-area: 1/1;
+  justify-self: center;
+  /*Centering the container*/
+}
+.wingman .title h3 {
+  color: #f4f4f4;
+  text-align: center;
+  /* BoxShadow */
+  text-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.25);
+  font-family: "Inter", sans-serif;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  width: 837px;
+  margin-bottom: 30px;
+}
+.wingman .title img {
+  pointer-events: none;
+  user-select: none;
+}
+
 /*# sourceMappingURL=main.css.map */
