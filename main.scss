@@ -63,6 +63,7 @@ body {
 	background-image: url(./img_src/bg\ pattern.png);
 }
 
+
 .header {
 	max-width: auto;
 	height: 4.5rem;
@@ -583,6 +584,37 @@ body {
 
 		/* BoxShadow */
 		box-shadow: $Shadow_black;
+
+		display: grid;
+		grid-template-columns: 1fr;
+		align-items: center;
+
+		#donuts {
+			/*Centering the container*/
+			grid-area: 1/1;
+			justify-self: center;
+			/*Centering the container*/
+			
+			pointer-events: none;
+			user-select: none;
+		}
+
+		.donut1 {
+			transform: translateY(-300px);
+		}
+		.donut2 {
+			transform: translateX(300px) translateY(-100px);
+		}
+		.donut3 {
+			transform: translateX(-300px) translateY(-100px);
+		}
+		.donut4 {
+			transform: translateX(50px) translateY(-10px);
+		}
+		.donut5 {
+			transform: translateX(-150px) translateY(80px);
+		}
+
 	}
 	.bg {
 		z-index: -1;
