@@ -529,4 +529,127 @@ body {
   user-select: none;
 }
 
+.email {
+  height: auto;
+  margin-top: 400px;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+}
+.email .wrapper {
+  /*Centering the container*/
+  grid-area: 1/1;
+  justify-self: center;
+  align-self: center;
+  /*Centering the container*/
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 18vw;
+}
+.email .wrapper h3,
+.email .wrapper p {
+  grid-area: 1/1;
+}
+.email .wrapper .label {
+  grid-area: 1/1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.email .wrapper .label h3 {
+  color: #ff5356;
+  font-family: "Inter", sans-serif;
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.email .wrapper .label p {
+  color: #1e1e1e;
+  font-family: "Inter", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  width: 730px;
+}
+.email .wrapper .label .form h6 {
+  color: #1e1e1e;
+  font-family: "Inter", sans-serif;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-bottom: 5px;
+}
+.email .wrapper .label .form .formInputs {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.email .wrapper .label .form .formInputs input[type=email] {
+  width: 489px;
+  height: 51px;
+  border-radius: 100px;
+  background: var(--Accent-2, #f4f4f4);
+  box-sizing: border-box;
+  padding: 1em;
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ff5356;
+  accent-color: #ff5356;
+  border: none;
+}
+.email .wrapper .label .form .formInputs button {
+  width: 224.82px;
+  height: 51px;
+  border-radius: 100px;
+  border: 2px solid #f4f4f4;
+  background: #ff5356;
+  color: #f4f4f4;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  /* Pink Shadow */
+  box-shadow: 0px 0px 21.6px 0px #ff5356;
+}
+.email .wrapper .label .form .formInputs button:hover {
+  background: #ffbb00;
+  box-shadow: 0px 8px 0px 0px var(--Accent-2, #f4f4f4), 0px 0px 21.6px 0px #ffbb00;
+  transform: translateY(-6px);
+  cursor: pointer;
+}
+.email .wrapper .element {
+  /*Centering the container*/
+  grid-area: 1/1;
+  justify-self: center;
+  /*Centering the container*/
+  grid-area: 1/2;
+}
+.email .wrapper .element img {
+  pointer-events: none;
+  user-select: none;
+  transform: translateY(-130px);
+}
+.email .bg {
+  /*Centering the container*/
+  grid-area: 1/1;
+  justify-self: center;
+  /*Centering the container*/
+  width: 100%;
+  z-index: -1;
+}
+.email .bg img {
+  width: 100%;
+  pointer-events: none;
+  user-select: none;
+}
+
 /*# sourceMappingURL=main.css.map */

@@ -2,12 +2,12 @@
 *,
 *::before,
 *::after {
-	box-sizing: content-box;
+  box-sizing: content-box;
 }
 
 * {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /*Fonts*/
@@ -26,10 +26,10 @@ $BorderRd_Btn: 100rem;
 
 /*Effects*/
 $Shadow_bottom: 0px 4px 0px 0px #f4f4f4, 0px 12px 0px 0px #ff5356,
-	0px 24px 31.5px 0px rgba(255, 83, 86, 0.25);
+  0px 24px 31.5px 0px rgba(255, 83, 86, 0.25);
 
 $Shadow_text: 0px 4px 0px #ff5356, 0px 8px 0px rgba(255, 83, 86, 0.75),
-	0px 12px 0px rgba(255, 83, 86, 0.5), 0px 16px 0px rgba(255, 83, 86, 0.25);
+  0px 12px 0px rgba(255, 83, 86, 0.5), 0px 16px 0px rgba(255, 83, 86, 0.25);
 
 $Shadow_pink: 0px 0px 21.6px 0px #ff5356;
 
@@ -38,627 +38,769 @@ $Shadow_yellow: 0px 0px 21.6px 0px #ffbb00;
 $Shadow_black: 0px 4px 30px 0px rgba(0, 0, 0, 0.25);
 
 $Shadow_bottom-right: 4px 4px 0px 0px #f4f4f4, 12px 12px 0px 0px #ff5356,
-	0px 0px 29.2px 0px rgba(255, 83, 86, 0.25),
-	0px 24px 31.5px 0px rgba(255, 83, 86, 0.25);
+  0px 0px 29.2px 0px rgba(255, 83, 86, 0.25),
+  0px 24px 31.5px 0px rgba(255, 83, 86, 0.25);
 
 $Shadow_icon: drop-shadow(2px 2px 0px #dfdfdf) drop-shadow(3px 3px 0px #ff5356)
-	drop-shadow(1px 1px 31.5px rgba(255, 83, 86, 0.25));
+  drop-shadow(1px 1px 31.5px rgba(255, 83, 86, 0.25));
 
 //Hover Effects
 $hover_button: 0px 8px 0px 0px var(--Accent-2, #f4f4f4),
-	0px 0px 21.6px 0px #f4f4f4;
+  0px 0px 21.6px 0px #f4f4f4;
 
 $hover_button_yellow: 0px 8px 0px 0px var(--Accent-2, #f4f4f4),
-	0px 0px 21.6px 0px #ffbb00;
+  0px 0px 21.6px 0px #ffbb00;
 
 /*Effects*/
 
 *button {
-	outline: none;
-	transition: all 0.2s cubic-bezier(0.23, 1, 0.32, 1);
+  outline: none;
+  transition: all 0.2s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 body {
-	background-color: $Background;
-	background-image: url(./img_src/bg\ pattern.png);
+  background-color: $Background;
+  background-image: url(./img_src/bg\ pattern.png);
 }
 
-
 .header {
-	max-width: auto;
-	height: 4.5rem;
-	top: 0;
+  max-width: auto;
+  height: 4.5rem;
+  top: 0;
 
-	box-shadow: $Shadow_bottom;
-	background-color: $_Main1;
+  box-shadow: $Shadow_bottom;
+  background-color: $_Main1;
 
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-	position: sticky;
-	z-index: 100;
+  position: sticky;
+  z-index: 100;
 
-	.wrapper {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		gap: 65vw;
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 65vw;
 
-		img {
-			max-width: 15rem;
-			user-select: none;
-		}
-		.links {
-			display: flex;
-			flex-direction: row;
-			align-items: center;
-			justify-content: center;
-			gap: 2rem;
+    img {
+      max-width: 15rem;
+      user-select: none;
+    }
+    .links {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
 
-			a {
-				color: $Accent1;
-				text-align: center;
-				font-family: $Inter;
-				font-size: 1.6rem;
-				font-style: normal;
-				font-weight: 900;
-				line-height: normal;
+      a {
+        color: $Accent1;
+        text-align: center;
+        font-family: $Inter;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
 
-				text-decoration: none;
-				user-select: none;
-			}
-		}
-	}
+        text-decoration: none;
+        user-select: none;
+      }
+    }
+  }
 }
 
 .hero {
-	.wrapper {
-		display: grid;
-		grid-template-columns: 1fr;
-		justify-content: center;
-		align-items: center;
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
 
-		overflow: hidden;
+    overflow: hidden;
 
-		.bghero {
-			grid-area: 1/1;
-			align-self: center;
-			// justify-self: center;
+    .bghero {
+      grid-area: 1/1;
+      align-self: center;
+      // justify-self: center;
 
-			img {
-				width: 100%;
-				pointer-events: none;
-				user-select: none;
-				transform: translateY(-8rem);
-			}
-		}
-		.overlay {
-			grid-area: 1/1;
-			z-index: 1;
+      img {
+        width: 100%;
+        pointer-events: none;
+        user-select: none;
+        transform: translateY(-8rem);
+      }
+    }
+    .overlay {
+      grid-area: 1/1;
+      z-index: 1;
 
-			display: flex;
-			flex-direction: row;
-			justify-content: center;
-			align-items: center;
-			gap: 1.5vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 1.5vw;
 
-			transform: translateY(-15rem);
+      transform: translateY(-15rem);
 
-			.herolabel {
-				max-width: 40rem;
+      .herolabel {
+        max-width: 40rem;
 
-				display: flex;
-				align-items: center;
-				flex-direction: column;
-				gap: 1vw;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 1vw;
 
-				h1 {
-					color: $Accent1;
+        h1 {
+          color: $Accent1;
 
-					/* Echo */
-					text-shadow: $Shadow_text;
-					font-family: $Inter;
-					font-size: 4rem;
-					font-style: normal;
-					font-weight: 900;
-					line-height: normal;
-					letter-spacing: 0.2rem;
-					text-transform: uppercase;
+          /* Echo */
+          text-shadow: $Shadow_text;
+          font-family: $Inter;
+          font-size: 4rem;
+          font-style: normal;
+          font-weight: 900;
+          line-height: normal;
+          letter-spacing: 0.2rem;
+          text-transform: uppercase;
 
-					user-select: none;
-				}
-				h2 {
-					color: $Accent1;
-					text-align: justify;
-					font-family: $Inter;
-					font-size: 1.9rem;
-					font-style: normal;
-					font-weight: 700;
-					line-height: normal;
+          user-select: none;
+        }
+        h2 {
+          color: $Accent1;
+          text-align: justify;
+          font-family: $Inter;
+          font-size: 1.9rem;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
 
-					user-select: none;
-				}
-				button {
-					width: 20rem;
-					height: 3.5rem;
-					margin-top: 20px;
+          user-select: none;
+        }
+        button {
+          width: 20rem;
+          height: 3.5rem;
+          margin-top: 20px;
 
-					border-radius: $BorderRd_Btn;
-					border: 0.3rem solid $Accent1;
-					background: $_Main2;
-					/* Pink Shadow */
-					box-shadow: $Shadow_pink;
+          border-radius: $BorderRd_Btn;
+          border: 0.3rem solid $Accent1;
+          background: $_Main2;
+          /* Pink Shadow */
+          box-shadow: $Shadow_pink;
 
-					/*Text Styles*/
-					color: $Accent1;
-					text-align: center;
-					font-family: $Inter;
-					font-size: 2rem;
-					font-style: normal;
-					font-weight: 900;
-					line-height: normal;
-				}
-				button:hover {
-					box-shadow: $hover_button;
-					transform: translateY(-10px);
-					cursor: pointer;
-				}
-			}
-			.elements {
-				display: grid;
-				grid-template-columns: 1fr;
+          /*Text Styles*/
+          color: $Accent1;
+          text-align: center;
+          font-family: $Inter;
+          font-size: 2rem;
+          font-style: normal;
+          font-weight: 900;
+          line-height: normal;
+        }
+        button:hover {
+          box-shadow: $hover_button;
+          transform: translateY(-10px);
+          cursor: pointer;
+        }
+      }
+      .elements {
+        display: grid;
+        grid-template-columns: 1fr;
 
-				img {
-					grid-area: 1/1;
-					pointer-events: none;
-					user-select: none;
-					max-width: 100%;
-				}
-				.donut1 {
-					transform: translateY(-80px);
-				}
-				.donut2 {
-					transform: translateX(250px) translateY(260px);
-				}
-				.coffee1 {
-					transform: translateX(-20px) translateY(310px);
-				}
-			}
-		}
-	}
+        img {
+          grid-area: 1/1;
+          pointer-events: none;
+          user-select: none;
+          max-width: 100%;
+        }
+        .donut1 {
+          transform: translateY(-80px);
+        }
+        .donut2 {
+          transform: translateX(250px) translateY(260px);
+        }
+        .coffee1 {
+          transform: translateX(-20px) translateY(310px);
+        }
+      }
+    }
+  }
 }
 
 .transition_Logo {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-	img {
-		pointer-events: none;
-		user-select: none;
-	}
+  img {
+    pointer-events: none;
+    user-select: none;
+  }
 }
 
 .flashcards {
-	display: grid;
-	grid-template-columns: 1fr;
-	justify-content: center;
-	align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
 
-	.background {
-		/*Centering the container*/
-		grid-area: 1/1;
-		justify-self: center;
-		z-index: -1;
-		/*Centering the container*/
+  .background {
+    /*Centering the container*/
+    grid-area: 1/1;
+    justify-self: center;
+    z-index: -1;
+    /*Centering the container*/
 
-		width: 1229.352px;
-		height: 515.62px;
-		transform: rotate(1.5deg);
+    width: 1229.352px;
+    height: 515.62px;
+    transform: rotate(1.5deg);
 
-		border-radius: $BorderRd_Sm;
-		background: $_Main1;
+    border-radius: $BorderRd_Sm;
+    background: $_Main1;
 
-		/* Elements */
-		box-shadow: $Shadow_bottom-right;
-	}
+    /* Elements */
+    box-shadow: $Shadow_bottom-right;
+  }
 
-	.wrapper {
-		/*Centering the container*/
-		grid-area: 1/1;
-		justify-self: center;
-		/*Centering the container*/
+  .wrapper {
+    /*Centering the container*/
+    grid-area: 1/1;
+    justify-self: center;
+    /*Centering the container*/
 
-		width: 1165px;
-		height: 468px;
+    width: 1165px;
+    height: 468px;
 
-		border-radius: $BorderRd_Sm;
-		background: $Accent1;
+    border-radius: $BorderRd_Sm;
+    background: $Accent1;
 
-		/* BoxShadow */
-		box-shadow: $Shadow_black;
+    /* BoxShadow */
+    box-shadow: $Shadow_black;
 
-		/*aligning the label and elements container*/
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		justify-content: center;
-		align-items: center;
-		/*aligning the label and elements container*/
+    /*aligning the label and elements container*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    /*aligning the label and elements container*/
 
-		.label {
-			display: flex;
-			flex-direction: column;
-			gap: 10px;
+    .label {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
 
-			width: 581px;
+      width: 581px;
 
-			h3 {
-				color: $_Main2;
-				font-family: $Inter;
-				font-size: 36px;
-				font-style: normal;
-				font-weight: 900;
-				line-height: normal;
-			}
-			p {
-				color: $Accent2;
-				font-family: $Inter;
-				font-size: 24px;
-				font-style: normal;
-				font-weight: 600;
-				line-height: normal;
-			}
-			button {
-				/*Align button to center*/
-				justify-self: center;
-				align-self: center;
-				/*Align button to center*/
+      h3 {
+        color: $_Main2;
+        font-family: $Inter;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+      }
+      p {
+        color: $Accent2;
+        font-family: $Inter;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+      button {
+        /*Align button to center*/
+        justify-self: center;
+        align-self: center;
+        /*Align button to center*/
 
-				width: 215px;
-				height: 40px;
-				margin-top: 10px;
+        width: 215px;
+        height: 40px;
+        margin-top: 10px;
 
-				border-radius: $BorderRd_Btn;
-				border: 3px solid $Accent1;
-				background: $_Main2;
+        border-radius: $BorderRd_Btn;
+        border: 3px solid $Accent1;
+        background: $_Main2;
 
-				/* Pink Shadow */
-				box-shadow: $Shadow_pink;
+        /* Pink Shadow */
+        box-shadow: $Shadow_pink;
 
-				/*Text Style*/
-				color: $Accent1;
-				text-align: center;
-				font-family: $Inter;
-				font-size: 20px;
-				font-style: normal;
-				font-weight: 900;
-				line-height: normal;
-			}
-			button:hover {
-				background: $_Main1;
-				box-shadow: $hover_button_yellow;
-				transform: translateY(-6px);
-				cursor: pointer;
-			}
-		}
-		.elements {
-			display: grid;
-			grid-template-columns: 1fr;
+        /*Text Style*/
+        color: $Accent1;
+        text-align: center;
+        font-family: $Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+      }
+      button:hover {
+        background: $_Main1;
+        box-shadow: $hover_button_yellow;
+        transform: translateY(-6px);
+        cursor: pointer;
+      }
+    }
+    .elements {
+      display: grid;
+      grid-template-columns: 1fr;
 
-			img {
-				grid-area: 1/1;
-				pointer-events: none;
-				user-select: none;
-			}
-			.donut1 {
-				transform: translateX(200px) translateY(150px);
-			}
-			.donut2 {
-				transform: translateX(-20px) translateY(10px);
-			}
-			.donut3 {
-				transform: translateX(200px) translateY(-50px);
-			}
-		}
-	}
-	.arrowButton {
-		/*Centering the container*/
-		grid-area: 1/1;
-		justify-self: center;
-		z-index: 10;
-		/*Centering the container*/
+      img {
+        grid-area: 1/1;
+        pointer-events: none;
+        user-select: none;
+      }
+      .donut1 {
+        transform: translateX(200px) translateY(150px);
+      }
+      .donut2 {
+        transform: translateX(-20px) translateY(10px);
+      }
+      .donut3 {
+        transform: translateX(200px) translateY(-50px);
+      }
+    }
+  }
+  .arrowButton {
+    /*Centering the container*/
+    grid-area: 1/1;
+    justify-self: center;
+    z-index: 10;
+    /*Centering the container*/
 
-		display: flex;
-		flex-direction: row;
-		gap: 1060px;
+    display: flex;
+    flex-direction: row;
+    gap: 1060px;
 
-		transform: translateY(200px);
+    transform: translateY(200px);
 
-		img {
-			fill: $Accent2;
-			filter: $Shadow_icon;
-			pointer-events: none;
-			user-select: none;
-		}
+    img {
+      fill: $Accent2;
+      filter: $Shadow_icon;
+      pointer-events: none;
+      user-select: none;
+    }
 
-		.left,
-		.right {
-			img {
-				transition: all 0.05s ease-in;
-			}
-		}
-		.left:hover,
-		.right:hover {
-			cursor: pointer;
-			img {
-				transform: scale(1.2);
-			}
-		}
-		.left:active,
-		.right:active {
-			img {
-				transform: scale(0.9);
-			}
-		}
-	}
+    .left,
+    .right {
+      img {
+        transition: all 0.05s ease-in;
+      }
+    }
+    .left:hover,
+    .right:hover {
+      cursor: pointer;
+      img {
+        transform: scale(1.2);
+      }
+    }
+    .left:active,
+    .right:active {
+      img {
+        transform: scale(0.9);
+      }
+    }
+  }
 }
 
 .ratings {
-	margin-top: 400px;
+  margin-top: 400px;
 
-	display: grid;
-	grid-template-columns: 1fr;
-	justify-content: center;
-	align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
 
-	.wrapper {
-		/*Centering the container*/
-		grid-area: 1/1;
-		justify-self: center;
-		z-index: 1;
-		/*Centering the container*/
+  .wrapper {
+    /*Centering the container*/
+    grid-area: 1/1;
+    justify-self: center;
+    z-index: 1;
+    /*Centering the container*/
 
-		width: 1032px;
-		height: 570px;
+    width: 1032px;
+    height: 570px;
 
-		border-radius: 10px;
-		background: $Accent1;
+    border-radius: 10px;
+    background: $Accent1;
 
-		/* BoxShadow */
-		box-shadow: $Shadow_black;
+    /* BoxShadow */
+    box-shadow: $Shadow_black;
 
-		display: grid;
-		grid-template-columns: 1fr;
-		justify-content: center;
-		align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
 
-		.title {
-			/*Centering the container*/
-			grid-area: 1/1;
-			justify-self: center;
-			/*Centering the container*/
+    .title {
+      /*Centering the container*/
+      grid-area: 1/1;
+      justify-self: center;
+      /*Centering the container*/
 
-			transform: translateY(-280px);
+      transform: translateY(-280px);
 
-			display: grid;
-			grid-template-columns: 1fr;
-			align-items: center;
-			justify-content: center;
+      display: grid;
+      grid-template-columns: 1fr;
+      align-items: center;
+      justify-content: center;
 
-			img {
-				/*Centering the container*/
-				grid-area: 1/1;
-				/*Centering the container*/
+      img {
+        /*Centering the container*/
+        grid-area: 1/1;
+        /*Centering the container*/
 
-				user-select: none;
-				pointer-events: none;
-			}
-			h1 {
-				/*Centering the container*/
-				grid-area: 1/1;
-				/*Centering the container*/
+        user-select: none;
+        pointer-events: none;
+      }
+      h1 {
+        /*Centering the container*/
+        grid-area: 1/1;
+        /*Centering the container*/
 
-				color: $Accent1;
-				text-align: center;
+        color: $Accent1;
+        text-align: center;
 
-				/* BoxShadow */
-				text-shadow: $Shadow_black;
-				font-family: $Inter;
-				font-size: 64px;
-				font-style: normal;
-				font-weight: 900;
-				line-height: normal;
-				padding-bottom: 20px;
-			}
-		}
-		.reviews {
-			/*Centering the container*/
-			grid-area: 1/1;
-			justify-self: center;
-			/*Centering the container*/
+        /* BoxShadow */
+        text-shadow: $Shadow_black;
+        font-family: $Inter;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        padding-bottom: 20px;
+      }
+    }
+    .reviews {
+      /*Centering the container*/
+      grid-area: 1/1;
+      justify-self: center;
+      /*Centering the container*/
 
-			width: 876px;
+      width: 876px;
 
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
 
-			.stars {
-				img {
-					pointer-events: none;
-					user-select: none;
-				}
-			}
-			.statement {
-				display: flex;
-				flex-direction: column;
-				gap: 50px;
-				p {
-					color: $Accent2;
-					text-align: center;
+      .stars {
+        img {
+          pointer-events: none;
+          user-select: none;
+        }
+      }
+      .statement {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        p {
+          color: $Accent2;
+          text-align: center;
 
-					/* BoxShadow */
-					text-shadow: $Shadow_black;
-					font-family: $Inter;
-					font-size: 40px;
-					font-style: normal;
-					font-weight: 700;
-					line-height: normal;
-				}
-				h4 {
-					color: $_Main2;
-					text-align: right;
-					font-variant-numeric: slashed-zero;
+          /* BoxShadow */
+          text-shadow: $Shadow_black;
+          font-family: $Inter;
+          font-size: 40px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
+        h4 {
+          color: $_Main2;
+          text-align: right;
+          font-variant-numeric: slashed-zero;
 
-					/* BoxShadow */
-					text-shadow: $Shadow_black;
-					font-family: $Inter;
-					font-size: 20px;
-					font-style: normal;
-					font-weight: 800;
-					line-height: normal;
-				}
-			}
-		}
-	}
+          /* BoxShadow */
+          text-shadow: $Shadow_black;
+          font-family: $Inter;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 800;
+          line-height: normal;
+        }
+      }
+    }
+  }
 
-	.bgL {
-		/*Centering the container*/
-		grid-area: 1/1;
-		justify-self: center;
-		/*Centering the container*/
+  .bgL {
+    /*Centering the container*/
+    grid-area: 1/1;
+    justify-self: center;
+    /*Centering the container*/
 
-		width: 993.338px;
-		height: 548.646px;
-		transform: rotate(-5deg) translateX(-70px) translateY(10px);
+    width: 993.338px;
+    height: 548.646px;
+    transform: rotate(-5deg) translateX(-70px) translateY(10px);
 
-		border-radius: 10px;
-		background: $_Main1;
+    border-radius: 10px;
+    background: $_Main1;
 
-		/* Elements */
-		box-shadow: $Shadow_bottom-right;
-	}
-	.bgR {
-		/*Centering the container*/
-		grid-area: 1/1;
-		justify-self: center;
-		/*Centering the container*/
+    /* Elements */
+    box-shadow: $Shadow_bottom-right;
+  }
+  .bgR {
+    /*Centering the container*/
+    grid-area: 1/1;
+    justify-self: center;
+    /*Centering the container*/
 
-		width: 993.338px;
-		height: 548.646px;
-		transform: rotate(5deg) translateX(70px) translateY(10px);
+    width: 993.338px;
+    height: 548.646px;
+    transform: rotate(5deg) translateX(70px) translateY(10px);
 
-		border-radius: 10px;
-		background: $_Main1;
+    border-radius: 10px;
+    background: $_Main1;
 
-		/* Elements */
-		box-shadow: $Shadow_bottom-right;
-	}
+    /* Elements */
+    box-shadow: $Shadow_bottom-right;
+  }
 }
 
 .wingman {
-	display: grid;
-	grid-template-columns: 1fr;
-	justify-content: center;
-	align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
 
-	margin-top: 400px;
+  margin-top: 400px;
 
-	.wrapper,
-	.bg,
-	.title {
-		/*Centering the container*/
-		grid-area: 1/1;
-		justify-self: center;
-		/*Centering the container*/
-	}
+  .wrapper,
+  .bg,
+  .title {
+    /*Centering the container*/
+    grid-area: 1/1;
+    justify-self: center;
+    /*Centering the container*/
+  }
 
-	.wrapper {
-		width: 1167px;
-		height: 537px;
+  .wrapper {
+    width: 1167px;
+    height: 537px;
 
-		border-radius: $BorderRd_Sm;
-		background: $Accent1;
+    border-radius: $BorderRd_Sm;
+    background: $Accent1;
 
-		/* BoxShadow */
-		box-shadow: $Shadow_black;
+    /* BoxShadow */
+    box-shadow: $Shadow_black;
 
-		display: grid;
-		grid-template-columns: 1fr;
-		align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
 
-		#donuts {
-			/*Centering the container*/
-			grid-area: 1/1;
-			justify-self: center;
-			/*Centering the container*/
-			
-			pointer-events: none;
-			user-select: none;
-		}
+    #donuts {
+      /*Centering the container*/
+      grid-area: 1/1;
+      justify-self: center;
+      /*Centering the container*/
 
-		.donut1 {
-			transform: translateY(-300px);
-		}
-		.donut2 {
-			transform: translateX(300px) translateY(-100px);
-		}
-		.donut3 {
-			transform: translateX(-300px) translateY(-100px);
-		}
-		.donut4 {
-			transform: translateX(50px) translateY(-10px);
-		}
-		.donut5 {
-			transform: translateX(-150px) translateY(80px);
-		}
+      pointer-events: none;
+      user-select: none;
+    }
 
-	}
-	.bg {
-		z-index: -1;
+    .donut1 {
+      transform: translateY(-300px);
+    }
+    .donut2 {
+      transform: translateX(300px) translateY(-100px);
+    }
+    .donut3 {
+      transform: translateX(-300px) translateY(-100px);
+    }
+    .donut4 {
+      transform: translateX(50px) translateY(-10px);
+    }
+    .donut5 {
+      transform: translateX(-150px) translateY(80px);
+    }
+  }
+  .bg {
+    z-index: -1;
 
-		img {
-			pointer-events: none;
-			user-select: none;
-		}
-	}
-	.title {
-		transform: translateY(290px);
+    img {
+      pointer-events: none;
+      user-select: none;
+    }
+  }
+  .title {
+    transform: translateY(290px);
 
-		display: grid;
-		grid-template-columns: 1fr;
-		justify-content: center;
-		align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
 
-		h3,
-		img {
-			/*Centering the container*/
-			grid-area: 1/1;
-			justify-self: center;
-			/*Centering the container*/
-		}
+    h3,
+    img {
+      /*Centering the container*/
+      grid-area: 1/1;
+      justify-self: center;
+      /*Centering the container*/
+    }
 
-		h3 {
-			color: $Accent1;
-			text-align: center;
+    h3 {
+      color: $Accent1;
+      text-align: center;
 
-			/* BoxShadow */
-			text-shadow: $Shadow_black;
-			font-family: $Inter;
-			font-size: 2.4rem;
-			font-style: normal;
-			font-weight: 800;
-			line-height: normal;
+      /* BoxShadow */
+      text-shadow: $Shadow_black;
+      font-family: $Inter;
+      font-size: 2.4rem;
+      font-style: normal;
+      font-weight: 800;
+      line-height: normal;
 
-			width: 837px;
-			margin-bottom: 30px;
-		}
+      width: 837px;
+      margin-bottom: 30px;
+    }
 
-		img {
-			pointer-events: none;
-			user-select: none;
-		}
-	}
+    img {
+      pointer-events: none;
+      user-select: none;
+    }
+  }
+}
+
+.email {
+  height: auto;
+  margin-top: 400px;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+
+  .wrapper {
+    /*Centering the container*/
+    grid-area: 1/1;
+    justify-self: center;
+    align-self: center;
+    /*Centering the container*/
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+
+    padding-inline: 18vw;
+
+    h3,
+    p {
+      grid-area: 1/1;
+    }
+
+    .label {
+      grid-area: 1/1;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      h3 {
+        color: $_Main2;
+        font-family: $Inter;
+        font-size: 3.5rem;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+      }
+      p {
+        color: $Accent2;
+        font-family: $Inter;
+        font-size: 1.4rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+
+        width: 730px;
+      }
+
+      .form {
+        h6 {
+          color: $Accent2;
+          font-family: $Inter;
+          font-size: 1.3rem;
+          font-style: normal;
+          font-weight: 800;
+          line-height: normal;
+          margin-bottom: 5px;
+        }
+        .formInputs {
+          display: flex;
+          flex-direction: row;
+          gap: 15px;
+
+          input[type="email"] {
+            width: 489px;
+            height: 51px;
+
+            border-radius: 100px;
+            background: var(--Accent-2, #f4f4f4);
+            box-sizing: border-box;
+            padding: 1em;
+            font-family: $Inter;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: $_Main2;
+            accent-color: $_Main2;
+            border: none;
+          }
+          button {
+            width: 224.82px;
+            height: 51px;
+
+            border-radius: 100px;
+            border: 2px solid $Accent1;
+            background: $_Main2;
+
+            color: $Accent1;
+            text-align: center;
+            font-family: $Inter;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+
+            /* Pink Shadow */
+            box-shadow: $Shadow_pink;
+          }
+          button:hover {
+            background: $_Main1;
+            box-shadow: $hover_button_yellow;
+            transform: translateY(-6px);
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .element {
+      /*Centering the container*/
+      grid-area: 1/1;
+      justify-self: center;
+      /*Centering the container*/
+
+      grid-area: 1/2;
+
+      img {
+        pointer-events: none;
+        user-select: none;
+
+		transform: translateY(-130px);
+      }
+    }
+  }
+
+  .bg {
+    /*Centering the container*/
+    grid-area: 1/1;
+    justify-self: center;
+    /*Centering the container*/
+
+    width: 100%;
+
+    z-index: -1;
+    img {
+      width: 100%;
+      pointer-events: none;
+      user-select: none;
+    }
+  }
 }
