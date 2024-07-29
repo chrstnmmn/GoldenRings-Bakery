@@ -636,7 +636,7 @@ body {
 .email .wrapper .element img {
   pointer-events: none;
   user-select: none;
-  transform: translateY(-130px);
+  transform: translateX(100px) translateY(-100px) scale(1.2);
 }
 .email .bg {
   /*Centering the container*/
@@ -650,6 +650,50 @@ body {
   width: 100%;
   pointer-events: none;
   user-select: none;
+}
+
+.CTA {
+  margin-top: 400px;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+}
+.CTA .bg1,
+.CTA .bg2,
+.CTA .elements {
+  /*Centering the container*/
+  grid-area: 1/1;
+  justify-self: center;
+  /*Centering the container*/
+}
+.CTA .bg1 img,
+.CTA .bg2 img,
+.CTA .elements img {
+  pointer-events: none;
+  user-select: none;
+}
+.CTA .elements {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+}
+.CTA .elements .coffee1,
+.CTA .elements .donut1 {
+  /*Centering the container*/
+  grid-area: 1/1;
+  justify-self: center;
+  align-self: center;
+  /*Centering the container*/
+  pointer-events: none;
+  user-select: none;
+}
+.CTA .elements .coffee1 {
+  transform: translateX(-100px) translateY(-270px);
+}
+.CTA .elements .donut1 {
+  transform: translateX(100px) translateY(-210px);
 }
 
 /*# sourceMappingURL=main.css.map */
