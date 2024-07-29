@@ -21,6 +21,7 @@
 body {
   background-color: #fff0c9;
   background-image: url(./img_src/bg\ pattern.png);
+  overflow-x: hidden;
 }
 
 .header {
@@ -547,6 +548,7 @@ body {
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
   padding-inline: 18vw;
 }
 .email .wrapper h3,
