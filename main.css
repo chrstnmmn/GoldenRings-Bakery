@@ -659,6 +659,51 @@ body {
 .Business_Partners {
   margin-top: 400px;
 }
+.Business_Partners .wrapper {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.Business_Partners .wrapper .title img,
+.Business_Partners .wrapper .logoContainer img {
+  user-select: none;
+  pointer-events: none;
+}
+.Business_Partners .wrapper .title {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+}
+.Business_Partners .wrapper .title h1,
+.Business_Partners .wrapper .title img {
+  /*Centering the container*/
+  grid-area: 1/1;
+  justify-self: center;
+  align-items: center;
+  /*Centering the container*/
+}
+.Business_Partners .wrapper .title h1 {
+  color: #f4f4f4;
+  text-align: center;
+  /* BoxShadow */
+  text-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.25);
+  font-family: "Inter", sans-serif;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  margin-bottom: 25px;
+}
+.Business_Partners .wrapper .logoContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 200px;
+}
 
 .CTA {
   margin-top: 400px;
