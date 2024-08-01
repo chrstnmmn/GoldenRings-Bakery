@@ -61,7 +61,33 @@ $hover_button_yellow: 0px 8px 0px 0px var(--Accent-2, #f4f4f4),
 body {
 	background-color: $Background;
 	background-image: url(./img_src/bg\ pattern.png);
-  overflow-x: hidden;
+	overflow-x: hidden;
+}
+
+.Button_Pink {
+	width: 20rem;
+	height: 3.5rem;
+	margin-top: 20px;
+
+	border-radius: $BorderRd_Btn;
+	border: 0.3rem solid $Accent1;
+	background: $_Main2;
+	/* Pink Shadow */
+	box-shadow: $Shadow_pink;
+
+	/*Text Styles*/
+	color: $Accent1;
+	text-align: center;
+	font-family: $Inter;
+	font-size: 2rem;
+	font-style: normal;
+	font-weight: 900;
+	line-height: normal;
+}
+.Button_Pink:hover {
+	box-shadow: $hover_button;
+	transform: translateY(-10px);
+	cursor: pointer;
 }
 
 .header {
@@ -178,31 +204,6 @@ body {
 					line-height: normal;
 
 					user-select: none;
-				}
-				button {
-					width: 20rem;
-					height: 3.5rem;
-					margin-top: 20px;
-
-					border-radius: $BorderRd_Btn;
-					border: 0.3rem solid $Accent1;
-					background: $_Main2;
-					/* Pink Shadow */
-					box-shadow: $Shadow_pink;
-
-					/*Text Styles*/
-					color: $Accent1;
-					text-align: center;
-					font-family: $Inter;
-					font-size: 2rem;
-					font-style: normal;
-					font-weight: 900;
-					line-height: normal;
-				}
-				button:hover {
-					box-shadow: $hover_button;
-					transform: translateY(-10px);
-					cursor: pointer;
 				}
 			}
 			.elements {
@@ -682,7 +683,7 @@ body {
 		grid-template-columns: 1fr 1fr;
 		justify-content: center;
 		align-items: center;
-    overflow-x: hidden;
+		overflow-x: hidden;
 		padding-inline: 18vw;
 
 		h3,
@@ -813,6 +814,7 @@ body {
 	justify-content: center;
 	align-items: center;
 
+	.wrapper,
 	.bg1,
 	.bg2,
 	.elements {
@@ -824,6 +826,38 @@ body {
 		img {
 			pointer-events: none;
 			user-select: none;
+		}
+	}
+
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 5px;
+		h2 {
+			color: $Accent1;
+			text-align: center;
+
+			/* Text Effect */
+			text-shadow: $Shadow_text;
+			font-family: $Inter;
+			font-size: 5rem;
+			font-style: normal;
+			font-weight: 900;
+			line-height: normal;
+		}
+		p {
+			color: $Accent1;
+			text-align: center;
+			font-family: $Inter;
+			font-size: 2.5rem;
+			font-style: normal;
+			font-weight: 300;
+			line-height: normal;
+		}
+		.Button_Pink {
+			margin-top: 15px;
 		}
 	}
 

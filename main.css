@@ -24,6 +24,31 @@ body {
   overflow-x: hidden;
 }
 
+.Button_Pink {
+  width: 20rem;
+  height: 3.5rem;
+  margin-top: 20px;
+  border-radius: 100rem;
+  border: 0.3rem solid #f4f4f4;
+  background: #ff5356;
+  /* Pink Shadow */
+  box-shadow: 0px 0px 21.6px 0px #ff5356;
+  /*Text Styles*/
+  color: #f4f4f4;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.Button_Pink:hover {
+  box-shadow: 0px 8px 0px 0px var(--Accent-2, #f4f4f4), 0px 0px 21.6px 0px #f4f4f4;
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+
 .header {
   max-width: auto;
   height: 4.5rem;
@@ -121,29 +146,6 @@ body {
   font-weight: 700;
   line-height: normal;
   user-select: none;
-}
-.hero .wrapper .overlay .herolabel button {
-  width: 20rem;
-  height: 3.5rem;
-  margin-top: 20px;
-  border-radius: 100rem;
-  border: 0.3rem solid #f4f4f4;
-  background: #ff5356;
-  /* Pink Shadow */
-  box-shadow: 0px 0px 21.6px 0px #ff5356;
-  /*Text Styles*/
-  color: #f4f4f4;
-  text-align: center;
-  font-family: "Inter", sans-serif;
-  font-size: 2rem;
-  font-style: normal;
-  font-weight: 900;
-  line-height: normal;
-}
-.hero .wrapper .overlay .herolabel button:hover {
-  box-shadow: 0px 8px 0px 0px var(--Accent-2, #f4f4f4), 0px 0px 21.6px 0px #f4f4f4;
-  transform: translateY(-10px);
-  cursor: pointer;
 }
 .hero .wrapper .overlay .elements {
   display: grid;
@@ -661,6 +663,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+.CTA .wrapper,
 .CTA .bg1,
 .CTA .bg2,
 .CTA .elements {
@@ -669,11 +672,42 @@ body {
   justify-self: center;
   /*Centering the container*/
 }
+.CTA .wrapper img,
 .CTA .bg1 img,
 .CTA .bg2 img,
 .CTA .elements img {
   pointer-events: none;
   user-select: none;
+}
+.CTA .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.CTA .wrapper h2 {
+  color: #f4f4f4;
+  text-align: center;
+  /* Text Effect */
+  text-shadow: 0px 4px 0px #ff5356, 0px 8px 0px rgba(255, 83, 86, 0.75), 0px 12px 0px rgba(255, 83, 86, 0.5), 0px 16px 0px rgba(255, 83, 86, 0.25);
+  font-family: "Inter", sans-serif;
+  font-size: 5rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+.CTA .wrapper p {
+  color: #f4f4f4;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.CTA .wrapper .Button_Pink {
+  margin-top: 15px;
 }
 .CTA .elements {
   display: grid;
