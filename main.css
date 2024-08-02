@@ -781,4 +781,49 @@ body {
   transform: translateX(100px) translateY(-210px);
 }
 
+.footer {
+  margin-top: 400px;
+}
+.footer .wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+}
+.footer .wrapper .label,
+.footer .wrapper .background {
+  /*Centering the container*/
+  grid-area: 1/1;
+  justify-self: center;
+  align-self: center;
+  /*Centering the container*/
+}
+.footer .wrapper .label {
+  width: 1040px;
+}
+.footer .wrapper .label .Section_right .logo {
+  pointer-events: none;
+  user-select: none;
+}
+.footer .wrapper .label .Section_right p {
+  width: 515px;
+  color: #1e1e1e;
+  text-align: justify;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.footer .wrapper .background {
+  bottom: 0;
+  width: 100%;
+}
+.footer .wrapper .background img {
+  width: 100%;
+  display: block;
+  user-select: none;
+  pointer-events: none;
+}
+
 /*# sourceMappingURL=main.css.map */
