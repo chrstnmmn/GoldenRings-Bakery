@@ -807,7 +807,7 @@ body {
 }
 
 .Business_Partners {
-  margin-top: 400px;
+  margin-top: 150px;
 
   .wrapper {
     display: grid;
@@ -859,7 +859,7 @@ body {
 		justify-content: center;
 		align-items: center;
 		gap: 20px;
-		width: 200px;
+		max-width: 1460px;
 	}
   }
 }
