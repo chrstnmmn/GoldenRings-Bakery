@@ -783,6 +783,7 @@ body {
 
 .footer {
   margin-top: 400px;
+  overflow: hidden;
 }
 .footer .wrapper {
   display: grid;
@@ -791,7 +792,8 @@ body {
   align-items: center;
 }
 .footer .wrapper .label,
-.footer .wrapper .background {
+.footer .wrapper .background,
+.footer .wrapper .elements {
   /*Centering the container*/
   grid-area: 1/1;
   justify-self: center;
@@ -891,6 +893,8 @@ body {
 .footer .wrapper .label .Section_bottom {
   grid-area: sctn_bottom;
   justify-self: center;
+  overflow: hidden;
+  display: grid;
 }
 .footer .wrapper .label .Section_bottom h6 {
   color: #1e1e1e;
@@ -910,6 +914,13 @@ body {
   display: block;
   user-select: none;
   pointer-events: none;
+}
+.footer .wrapper .elements {
+  translate: 600px 400px;
+}
+.footer .wrapper .elements img {
+  pointer-events: none;
+  user-select: none;
 }
 
 /*# sourceMappingURL=main.css.map */

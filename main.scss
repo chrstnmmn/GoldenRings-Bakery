@@ -947,6 +947,7 @@ body {
 
 .footer {
 	margin-top: 400px;
+  overflow: hidden;
 
 	.wrapper {
 		display: grid;
@@ -955,7 +956,8 @@ body {
 		align-items: center;
 
 		.label,
-		.background {
+		.background,  
+    .elements {
 			/*Centering the container*/
 			grid-area: 1/1;
 			justify-self: center;
@@ -1066,6 +1068,9 @@ body {
 			.Section_bottom {
 				grid-area: sctn_bottom;
 				justify-self: center;
+        overflow: hidden;
+
+        display: grid;
 
 				h6 {
 					color: $Accent2;
@@ -1089,5 +1094,13 @@ body {
 				pointer-events: none;
 			}
 		}
+    .elements {
+      translate: 600px 400px;
+      
+      img {
+        pointer-events: none;
+        user-select: none;
+      }
+    }
 	}
 }
