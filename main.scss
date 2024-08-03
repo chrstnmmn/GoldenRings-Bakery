@@ -1023,9 +1023,9 @@ body {
 					}
 				}
 				.social {
-          display: flex;
-          flex-direction: column;
-          gap: 5px;
+					display: flex;
+					flex-direction: column;
+					gap: 5px;
 					p {
 						color: $Accent2;
 						font-family: $Inter;
@@ -1044,24 +1044,23 @@ body {
 							user-select: none;
 						}
 					}
-				}
+					.Button_Pink {
+						width: 123px;
+						height: 27.023px;
+						border-radius: $BorderRd_Btn;
+						border: 2px solid $Accent1;
+						background: $_Main2;
+						padding: 0.1em;
 
-				.Button_Pink {
-					width: 123px;
-					height: 27.023px;
-					border-radius: $BorderRd_Btn;
-					border: 2px solid $Accent1;
-					background: $_Main2;
-					padding: 0.1em;
-
-					/*Text Styles*/
-					color: $Accent1;
-					text-align: center;
-					font-family: $Inter;
-					font-size: 1rem;
-					font-style: normal;
-					font-weight: 900;
-					line-height: normal;
+						/*Text Styles*/
+						color: $Accent1;
+						text-align: center;
+						font-family: $Inter;
+						font-size: 1rem;
+						font-style: normal;
+						font-weight: 900;
+						line-height: normal;
+					}
 				}
 			}
 			.Section_bottom {
