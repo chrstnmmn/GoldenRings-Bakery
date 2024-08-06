@@ -614,7 +614,7 @@ body {
   .email .wrapper .element img {
     pointer-events: none;
     user-select: none;
-    transform: translateX(100px) translateY(-100px) scale(1.2);
+    transform: translateX(100px) translateY(-100px);
   }
   .email .bg {
     /*Centering the container*/
