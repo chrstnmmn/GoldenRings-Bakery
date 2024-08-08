@@ -313,7 +313,7 @@ body {
     transform: scale(0.9);
   }
   .ratings {
-    margin-top: 400px;
+    margin-top: 200px;
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
@@ -429,7 +429,7 @@ body {
     grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
-    margin-top: 400px;
+    margin-top: 200px;
   }
   .wingman .wrapper,
   .wingman .bg,
@@ -512,7 +512,7 @@ body {
   }
   .email {
     height: auto;
-    margin-top: 400px;
+    margin-top: 200px;
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
@@ -632,6 +632,76 @@ body {
     width: 100%;
     pointer-events: none;
     user-select: none;
+  }
+  .menu {
+    margin-top: 200px;
+  }
+  .menu .categories {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu .categories .title,
+  .menu .categories .items {
+    /*Centering the container*/
+    grid-area: 1/1;
+    justify-self: center;
+    /*Centering the container*/
+  }
+  .menu .categories .title {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    translate: 0px -200px;
+  }
+  .menu .categories .title svg,
+  .menu .categories .title h1 {
+    /*Centering the container*/
+    grid-area: 1/1;
+    justify-self: center;
+    /*Centering the container*/
+  }
+  .menu .categories .title svg {
+    user-select: none;
+    pointer-events: none;
+    z-index: -1;
+    filter: drop-shadow(4px 4px 0px #f4f4f4) drop-shadow(6px 6px 0px #ff5356) drop-shadow(0px 24px 31.5px rgba(255, 83, 86, 0.25));
+  }
+  .menu .categories .title h1 {
+    color: #f4f4f4;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    /* BoxShadow */
+    text-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.25);
+    font-family: "Inter", sans-serif;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+  }
+  .menu .categories .items {
+    z-index: -2;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu .categories .items .background_White,
+  .menu .categories .items .background_Neon {
+    /*Centering the container*/
+    grid-area: 1/1;
+    justify-self: center;
+    /*Centering the container*/
+  }
+  .menu .categories .items .background_White {
+    filter: drop-shadow(0px 4px 30px rgba(0, 0, 0, 0.25));
+    margin-bottom: 1rem;
+  }
+  .menu .categories .items .background_Neon {
+    z-index: -1;
+    filter: drop-shadow(4px 4px 0px #f4f4f4) drop-shadow(8px 8px 0px #ff5356) drop-shadow(0px 10px 20px rgba(255, 83, 86, 0.5));
   }
   .Business_Partners {
     margin-top: 150px;
