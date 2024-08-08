@@ -616,7 +616,7 @@ body {
 			align-items: center;
 
 			h3,
-			img {
+			svg {
 				/*Centering the container*/
 				grid-area: 1/1;
 				justify-self: center;
@@ -639,9 +639,11 @@ body {
 				margin-bottom: 30px;
 			}
 
-			img {
+			svg {
 				pointer-events: none;
 				user-select: none;
+				z-index: -1;
+				filter: $Shadow_accentBanner_svg;
 			}
 		}
 	}
@@ -812,12 +814,19 @@ body {
 				align-items: center;
 
 				h1,
-				img {
+				svg {
 					/*Centering the container*/
 					grid-area: 1/1;
 					justify-self: center;
 					align-items: center;
 					/*Centering the container*/
+				}
+
+				svg {
+					user-select: none;
+					pointer-events: none;
+					z-index: -1;
+					filter: $Shadow_accentBanner_svg;
 				}
 
 				h1 {
