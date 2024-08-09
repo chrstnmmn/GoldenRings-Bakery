@@ -6,3 +6,4 @@ BackToTop.addEventListener("click", function () {
         behavior: "smooth"
     });
 });
+

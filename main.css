@@ -193,17 +193,23 @@ body {
     filter: drop-shadow(4px 4px 0px #f4f4f4) drop-shadow(8px 8px 0px #ff5356) drop-shadow(0px 10px 20px rgba(255, 83, 86, 0.5));
     translate: 0px 15px;
   }
-  .flashcards .wrapper {
+  .flashcards .cards {
     /*Centering the container*/
     grid-area: 1/1;
     justify-self: center;
+    align-self: center;
     /*Centering the container*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 1165px;
     height: 468px;
     border-radius: 1rem;
     background: #f4f4f4;
     /* BoxShadow */
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.25);
+  }
+  .flashcards .cards .items {
     /*aligning the label and elements container*/
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -211,13 +217,13 @@ body {
     align-items: center;
     /*aligning the label and elements container*/
   }
-  .flashcards .wrapper .label {
+  .flashcards .cards .items .label {
     display: flex;
     flex-direction: column;
     gap: 10px;
     width: 581px;
   }
-  .flashcards .wrapper .label h3 {
+  .flashcards .cards .items .label h3 {
     color: #ff5356;
     font-family: "Inter", sans-serif;
     font-size: 36px;
@@ -225,7 +231,7 @@ body {
     font-weight: 900;
     line-height: normal;
   }
-  .flashcards .wrapper .label p {
+  .flashcards .cards .items .label p {
     color: #1e1e1e;
     font-family: "Inter", sans-serif;
     font-size: 24px;
@@ -233,7 +239,7 @@ body {
     font-weight: 600;
     line-height: normal;
   }
-  .flashcards .wrapper .label button {
+  .flashcards .cards .items .label button {
     /*Align button to center*/
     justify-self: center;
     align-self: center;
@@ -255,28 +261,28 @@ body {
     font-weight: 900;
     line-height: normal;
   }
-  .flashcards .wrapper .label button:hover {
+  .flashcards .cards .items .label button:hover {
     background: #ffbb00;
     box-shadow: 0px 8px 0px 0px var(--Accent-2, #f4f4f4), 0px 0px 21.6px 0px #ffbb00;
     transform: translateY(-6px);
     cursor: pointer;
   }
-  .flashcards .wrapper .elements {
+  .flashcards .cards .items .elements {
     display: grid;
     grid-template-columns: 1fr;
   }
-  .flashcards .wrapper .elements img {
+  .flashcards .cards .items .elements img {
     grid-area: 1/1;
     pointer-events: none;
     user-select: none;
   }
-  .flashcards .wrapper .elements .donut1 {
+  .flashcards .cards .items .elements .donut1 {
     transform: translateX(200px) translateY(150px);
   }
-  .flashcards .wrapper .elements .donut2 {
+  .flashcards .cards .items .elements .donut2 {
     transform: translateX(-20px) translateY(10px);
   }
-  .flashcards .wrapper .elements .donut3 {
+  .flashcards .cards .items .elements .donut3 {
     transform: translateX(200px) translateY(-50px);
   }
   .flashcards .arrowButton {
