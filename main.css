@@ -695,7 +695,8 @@ body {
     align-items: center;
   }
   .menu .categories .items .background_White,
-  .menu .categories .items .background_Neon {
+  .menu .categories .items .background_Neon,
+  .menu .categories .items .lists_Products {
     /*Centering the container*/
     grid-area: 1/1;
     justify-self: center;
@@ -708,6 +709,111 @@ body {
   .menu .categories .items .background_Neon {
     z-index: -1;
     filter: drop-shadow(4px 4px 0px #f4f4f4) drop-shadow(8px 8px 0px #ff5356) drop-shadow(0px 10px 20px rgba(255, 83, 86, 0.5));
+  }
+  .menu .categories .items .lists_Products {
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 970px;
+    height: 222px;
+  }
+  .menu .categories .items .lists_Products .products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 200px;
+    height: 260px;
+  }
+  .menu .categories .items .lists_Products .products img {
+    width: 142.275px;
+    height: 177.818px;
+    display: block;
+    user-select: none;
+    pointer-events: none;
+  }
+  .menu .categories .items .lists_Products .products h3 {
+    color: #1e1e1e;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+  }
+  .menu .donutLists {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu .donutLists .title,
+  .menu .donutLists .background,
+  .menu .donutLists .products {
+    /*Centering the container*/
+    grid-area: 1/1;
+    justify-self: center;
+    /*Centering the container*/
+  }
+  .menu .donutLists .title {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    translate: 0px -310px;
+  }
+  .menu .donutLists .title h1,
+  .menu .donutLists .title svg {
+    /*Centering the container*/
+    grid-area: 1/1;
+    justify-self: center;
+    /*Centering the container*/
+  }
+  .menu .donutLists .title svg {
+    z-index: -1;
+    padding-top: 25px;
+    filter: drop-shadow(4px 4px 0px #f4f4f4) drop-shadow(6px 6px 0px #ff5356) drop-shadow(0px 24px 31.5px rgba(255, 83, 86, 0.25));
+  }
+  .menu .donutLists .title h1 {
+    color: #f4f4f4;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+  }
+  .menu .donutLists .background {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu .donutLists .background .white,
+  .menu .donutLists .background .neon_back,
+  .menu .donutLists .background .neon_middle {
+    /*Centering the container*/
+    grid-area: 1/1;
+    justify-self: center;
+    /*Centering the container*/
+  }
+  .menu .donutLists .background .white {
+    z-index: 1;
+    filter: drop-shadow(0px 4px 30px rgba(0, 0, 0, 0.25));
+  }
+  .menu .donutLists .background .neon_back,
+  .menu .donutLists .background .neon_middle {
+    filter: drop-shadow(4px 4px 0px #f4f4f4) drop-shadow(8px 8px 0px #ff5356) drop-shadow(0px 10px 20px rgba(255, 83, 86, 0.5));
+  }
+  .menu .donutLists .background .neon_back {
+    translate: -10px 10px;
+  }
+  .menu .donutLists .background .neon_middle {
+    translate: 10px 10px;
   }
   .Business_Partners {
     margin-top: 150px;
