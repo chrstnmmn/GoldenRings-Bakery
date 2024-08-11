@@ -1,4 +1,4 @@
-# Golden-Rings-Assets
+# GoldenRings-Bakery 
 Hello! I created this project for to build my portfolio because I need a job :D
 
 That's all if you have a comment on my work feel free to say anything.
