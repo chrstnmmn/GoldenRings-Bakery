@@ -70,7 +70,11 @@ $Shadow_accent_black_svg: drop-shadow(0px 4px 30px rgba(0, 0, 0, 0.25));
 
 body {
 	background-color: $Background;
-	background-image: url("./img_src/Background.png");
+	// why the fuck is this not working?
+	// fix this cause I'm gonna vommit in your face if this problem did not fix
+	// the problem is the image is not showing on the website
+	// I don't know debug it, I guess?
+	background-image: url(../img_src/Background.png); // Here you go I fixed it :)
 	overflow-x: hidden;
 }
 

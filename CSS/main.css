@@ -20,7 +20,7 @@
 
 body {
   background-color: #fff0c9;
-  background-image: url("./img_src/Background.png");
+  background-image: url(../img_src/Background.png);
   overflow-x: hidden;
 }
 
