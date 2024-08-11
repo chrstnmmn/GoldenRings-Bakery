@@ -28,6 +28,7 @@ body {
 	overflow-x: hidden;
 }
 
+// this is the utility class you dumb fuck!
 .Button_Pink {
 	width: 20rem;
 	height: 3.5rem;
@@ -52,54 +53,6 @@ body {
 	box-shadow: $hover_button;
 	transform: translateY(-10px);
 	cursor: pointer;
-}
-
-.header {
-	max-width: auto;
-	height: 4.5rem;
-	top: 0;
-
-	box-shadow: $Shadow_bottom;
-	background-color: $_Main1;
-
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-	position: sticky;
-	z-index: 100;
-
-	.wrapper {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		gap: 1200px;
-
-		img {
-			max-width: 15rem;
-			user-select: none;
-		}
-		.links {
-			display: flex;
-			flex-direction: row;
-			align-items: center;
-			justify-content: center;
-			gap: 2rem;
-
-			a {
-				color: $Accent1;
-				text-align: center;
-				font-family: $Inter;
-				font-size: 1.6rem;
-				font-style: normal;
-				font-weight: 900;
-				line-height: normal;
-
-				text-decoration: none;
-				user-select: none;
-			}
-		}
-	}
 }
 
 .hero {
