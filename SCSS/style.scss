@@ -1,0 +1,51 @@
+/*Fonts*/
+$Inter: "Inter", sans-serif;
+/*Colors*/
+$Accent1: #f4f4f4;
+$Accent2: #1e1e1e;
+$Accent3: #ffe39c;
+$_Main1: #ffbb00;
+$_Main2: #ff5356;
+$Background: #fff0c9;
+
+// shapes
+$BorderRd_Sm: 1rem;
+$BorderRd_Btn: 100rem;
+
+/*Effects*/
+$Shadow_bottom: 0px 4px 0px 0px #f4f4f4, 0px 12px 0px 0px #ff5356,
+	0px 24px 31.5px 0px rgba(255, 83, 86, 0.25);
+
+$Shadow_text: 0px 4px 0px #ff5356, 0px 8px 0px rgba(255, 83, 86, 0.75),
+	0px 12px 0px rgba(255, 83, 86, 0.5), 0px 16px 0px rgba(255, 83, 86, 0.25);
+
+$Shadow_pink: 0px 0px 21.6px 0px #ff5356;
+
+$Shadow_yellow: 0px 0px 21.6px 0px #ffbb00;
+
+$Shadow_black: 0px 4px 30px 0px rgba(0, 0, 0, 0.25);
+
+$Shadow_bottom-right: 4px 4px 0px 0px #f4f4f4, 12px 12px 0px 0px #ff5356,
+	0px 0px 29.2px 0px rgba(255, 83, 86, 0.25),
+	0px 24px 31.5px 0px rgba(255, 83, 86, 0.25);
+
+//Hover Effects
+$hover_button: 0px 8px 0px 0px var(--Accent-2, #f4f4f4),
+	0px 0px 21.6px 0px #f4f4f4;
+
+$hover_button_yellow: 0px 8px 0px 0px var(--Accent-2, #f4f4f4),
+	0px 0px 21.6px 0px #ffbb00;
+
+// SVG Filters
+$Shadow_icon: drop-shadow(2px 2px 0px #dfdfdf) drop-shadow(3px 3px 0px #ff5356)
+	drop-shadow(1px 1px 31.5px rgba(255, 83, 86, 0.25));
+
+$Shadow_accent_svg: drop-shadow(4px 4px 0px #f4f4f4)
+	drop-shadow(8px 8px 0px #ff5356)
+	drop-shadow(0px 10px 20px rgba(255, 83, 86, 0.5));
+
+$Shadow_accentBanner_svg: drop-shadow(4px 4px 0px #f4f4f4)
+	drop-shadow(6px 6px 0px #ff5356)
+	drop-shadow(0px 24px 31.5px rgba(255, 83, 86, 0.25));
+
+$Shadow_accent_black_svg: drop-shadow(0px 4px 30px rgba(0, 0, 0, 0.25));
