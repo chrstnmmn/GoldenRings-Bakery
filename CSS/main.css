@@ -20,7 +20,7 @@
 
 body {
   background-color: #fff0c9;
-  background-image: url(./img_src/bg\ pattern.png);
+  background-image: url("./img_src/Background.png");
   overflow-x: hidden;
 }
 
@@ -764,7 +764,7 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 3;
-    translate: 0px -310px;
+    translate: 0px -315px;
   }
   .menu .donutLists .title h1,
   .menu .donutLists .title svg {
