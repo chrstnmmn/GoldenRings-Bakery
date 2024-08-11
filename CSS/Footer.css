@@ -1,0 +1,197 @@
+/*Fonts*/
+/*Colors*/
+/*Effects*/
+*,
+*::before,
+*::after {
+  box-sizing: content-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*Effects*/
+* button {
+  outline: none;
+  transition: all 0.2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+body {
+  background-color: #fff0c9;
+  background-image: url(../img_src/Background.png);
+  overflow-x: hidden;
+}
+
+.Button_Pink {
+  width: 20rem;
+  height: 3.5rem;
+  margin-top: 20px;
+  border-radius: 100rem;
+  border: 0.3rem solid #f4f4f4;
+  background: #ff5356;
+  /* Pink Shadow */
+  box-shadow: 0px 0px 21.6px 0px #ff5356;
+  /*Text Styles*/
+  color: #f4f4f4;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.Button_Pink:hover {
+  box-shadow: 0px 8px 0px 0px var(--Accent-2, #f4f4f4), 0px 0px 21.6px 0px #f4f4f4;
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+
+/*Fonts*/
+/*Colors*/
+/*Effects*/
+.footer {
+  margin-top: 400px;
+  overflow: hidden;
+}
+.footer .wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+}
+.footer .wrapper .label,
+.footer .wrapper .background,
+.footer .wrapper .elements {
+  /*Centering the container*/
+  grid-area: 1/1;
+  justify-self: center;
+  align-self: center;
+  /*Centering the container*/
+}
+.footer .wrapper .label {
+  translate: 0px 100px;
+  width: 1040px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  grid-template: "sctn_left sctn_right" "sctn_bottom sctn_bottom";
+}
+.footer .wrapper .label .Section_left {
+  grid-area: sctn_left;
+}
+.footer .wrapper .label .Section_left .logo {
+  pointer-events: none;
+  user-select: none;
+}
+.footer .wrapper .label .Section_left p {
+  width: 515px;
+  color: #1e1e1e;
+  text-align: justify;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.footer .wrapper .label .Section_right {
+  grid-area: sctn_right;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer .wrapper .label .Section_right .address h5 {
+  color: #ff5356;
+  font-family: "Inter", sans-serif;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%; /* 54px */
+  letter-spacing: -0.792px;
+}
+.footer .wrapper .label .Section_right .address h6 {
+  color: #ff5356;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%; /* 30px */
+  letter-spacing: -0.44px;
+}
+.footer .wrapper .label .Section_right .social {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.footer .wrapper .label .Section_right .social p {
+  color: #1e1e1e;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 30px */
+  letter-spacing: -0.44px;
+}
+.footer .wrapper .label .Section_right .social .icons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.footer .wrapper .label .Section_right .social .icons img {
+  pointer-events: none;
+  user-select: none;
+}
+.footer .wrapper .label .Section_right .social .Button_Pink {
+  width: 123px;
+  height: 27.023px;
+  border-radius: 100rem;
+  border: 2px solid #f4f4f4;
+  background: #ff5356;
+  padding: 0.1em;
+  /*Text Styles*/
+  color: #f4f4f4;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+.footer .wrapper .label .Section_bottom {
+  grid-area: sctn_bottom;
+  justify-self: center;
+  overflow: hidden;
+  display: grid;
+}
+.footer .wrapper .label .Section_bottom h6 {
+  color: #1e1e1e;
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-align: center;
+}
+.footer .wrapper .background {
+  bottom: 0;
+  width: 100%;
+}
+.footer .wrapper .background img {
+  width: 100%;
+  display: block;
+  user-select: none;
+  pointer-events: none;
+}
+.footer .wrapper .elements {
+  translate: 600px 420px;
+}
+.footer .wrapper .elements img {
+  pointer-events: none;
+  user-select: none;
+}
+
+/*# sourceMappingURL=Footer.css.map */

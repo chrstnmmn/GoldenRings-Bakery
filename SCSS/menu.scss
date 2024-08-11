@@ -1,0 +1,199 @@
+@import "main.scss";
+@import "style.scss";
+
+.menu {
+	margin-top: 200px;
+	.categories {
+		display: grid;
+		grid-template-columns: 1fr;
+		justify-content: center;
+		align-items: center;
+
+		.title,
+		.items {
+			/*Centering the container*/
+			grid-area: 1/1;
+			justify-self: center;
+			/*Centering the container*/
+		}
+
+		.title {
+			display: grid;
+			grid-template-columns: 1fr;
+			justify-content: center;
+			align-items: center;
+
+			translate: 0px -200px;
+
+			svg,
+			h1 {
+				/*Centering the container*/
+				grid-area: 1/1;
+				justify-self: center;
+				/*Centering the container*/
+			}
+			svg {
+				user-select: none;
+				pointer-events: none;
+				z-index: -1;
+				filter: $Shadow_accentBanner_svg;
+			}
+			h1 {
+				color: $Accent1;
+				text-align: center;
+				margin-bottom: 1.5rem;
+
+				/* BoxShadow */
+				text-shadow: $Shadow_black;
+				font-family: $Inter;
+				font-size: 3rem;
+				font-style: normal;
+				font-weight: 900;
+				line-height: normal;
+			}
+		}
+
+		.items {
+			z-index: -2;
+
+			display: grid;
+			grid-template-columns: 1fr;
+			justify-content: center;
+			align-items: center;
+
+			.background_White,
+			.background_Neon,
+			.lists_Products {
+				/*Centering the container*/
+				grid-area: 1/1;
+				justify-self: center;
+				/*Centering the container*/
+			}
+
+			.background_White {
+				filter: $Shadow_accent_black_svg;
+				margin-bottom: 1rem;
+			}
+			.background_Neon {
+				z-index: -1;
+				filter: $Shadow_accent_svg;
+			}
+			.lists_Products {
+				z-index: 2;
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+				width: 970px;
+				height: 222px;
+
+				.products {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					padding: 0;
+
+					width: 200px;
+					height: 260px;
+
+					img {
+						width: 142.275px;
+						height: 177.818px;
+						display: block;
+						user-select: none;
+						pointer-events: none;
+					}
+					h3 {
+						color: $Accent2;
+						text-align: center;
+						font-family: $Inter;
+						font-size: 1.3rem;
+						font-style: normal;
+						font-weight: 900;
+						line-height: normal;
+					}
+				}
+			}
+		}
+	}
+	.donutLists {
+		display: grid;
+		grid-template-columns: 1fr;
+		justify-content: center;
+		align-items: center;
+
+		.title,
+		.background,
+		.products {
+			/*Centering the container*/
+			grid-area: 1/1;
+			justify-self: center;
+			/*Centering the container*/
+		}
+
+		.title {
+			display: grid;
+			grid-template-columns: 1fr;
+			justify-content: center;
+			align-items: center;
+
+			z-index: 3;
+			translate: 0px -315px;
+
+			h1,
+			svg {
+				/*Centering the container*/
+				grid-area: 1/1;
+				justify-self: center;
+				/*Centering the container*/
+			}
+
+			svg {
+				z-index: -1;
+				padding-top: 25px;
+				filter: $Shadow_accentBanner_svg;
+			}
+			h1 {
+				color: $Accent1;
+				text-align: center;
+				font-family: $Inter;
+				font-size: 3rem;
+				font-style: normal;
+				font-weight: 900;
+				line-height: normal;
+			}
+		}
+		.background {
+			display: grid;
+			grid-template-columns: 1fr;
+			justify-content: center;
+			align-items: center;
+
+			.white,
+			.neon_back,
+			.neon_middle {
+				/*Centering the container*/
+				grid-area: 1/1;
+				justify-self: center;
+				/*Centering the container*/
+			}
+
+			.white {
+				z-index: 1;
+				filter: $Shadow_accent_black_svg;
+			}
+			.neon_back,
+			.neon_middle {
+				filter: $Shadow_accent_svg;
+			}
+
+			.neon_back {
+				translate: -10px 10px;
+			}
+			.neon_middle {
+				translate: 10px 10px;
+			}
+		}
+	}
+}

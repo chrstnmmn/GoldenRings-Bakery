@@ -1,0 +1,145 @@
+@import "main.scss";
+@import "style.scss";
+
+.email {
+	height: auto;
+	margin-top: 200px;
+
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-content: center;
+	align-items: center;
+
+	.wrapper {
+		/*Centering the container*/
+		grid-area: 1/1;
+		justify-self: center;
+		align-self: center;
+		/*Centering the container*/
+
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		justify-content: center;
+		align-items: center;
+		overflow-x: hidden;
+		padding-inline: 18vw;
+
+		h3,
+		p {
+			grid-area: 1/1;
+		}
+
+		.label {
+			grid-area: 1/1;
+			display: flex;
+			flex-direction: column;
+			gap: 1.5rem;
+			h3 {
+				color: $_Main2;
+				font-family: $Inter;
+				font-size: 3.5rem;
+				font-style: normal;
+				font-weight: 800;
+				line-height: normal;
+			}
+			p {
+				color: $Accent2;
+				font-family: $Inter;
+				font-size: 1.4rem;
+				font-style: normal;
+				font-weight: 500;
+				line-height: normal;
+
+				width: 730px;
+			}
+
+			.form {
+				h6 {
+					color: $Accent2;
+					font-family: $Inter;
+					font-size: 1.3rem;
+					font-style: normal;
+					font-weight: 800;
+					line-height: normal;
+					margin-bottom: 5px;
+				}
+				.formInputs {
+					display: flex;
+					flex-direction: row;
+					gap: 15px;
+
+					input[type="email"] {
+						width: 489px;
+						height: 51px;
+
+						border-radius: 100px;
+						background: var(--Accent-2, #f4f4f4);
+						box-sizing: border-box;
+						padding: 1em;
+						font-family: $Inter;
+						font-size: 1.5rem;
+						font-weight: 600;
+						color: $_Main2;
+						accent-color: $_Main2;
+						border: none;
+					}
+					button {
+						width: 224.82px;
+						height: 51px;
+
+						border-radius: 100px;
+						border: 2px solid $Accent1;
+						background: $_Main2;
+
+						color: $Accent1;
+						text-align: center;
+						font-family: $Inter;
+						font-size: 24px;
+						font-style: normal;
+						font-weight: 900;
+						line-height: normal;
+
+						/* Pink Shadow */
+						box-shadow: $Shadow_pink;
+					}
+					button:hover {
+						background: $_Main1;
+						box-shadow: $hover_button_yellow;
+						transform: translateY(-6px);
+						cursor: pointer;
+					}
+				}
+			}
+		}
+		.element {
+			/*Centering the container*/
+			grid-area: 1/1;
+			justify-self: center;
+			/*Centering the container*/
+
+			grid-area: 1/2;
+
+			img {
+				pointer-events: none;
+				user-select: none;
+				transform: translateX(100px) translateY(-100px);
+			}
+		}
+	}
+
+	.bg {
+		/*Centering the container*/
+		grid-area: 1/1;
+		justify-self: center;
+		/*Centering the container*/
+
+		width: 100%;
+
+		z-index: -1;
+		img {
+			width: 100%;
+			pointer-events: none;
+			user-select: none;
+		}
+	}
+}

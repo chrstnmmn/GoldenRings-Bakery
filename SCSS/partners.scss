@@ -1,0 +1,67 @@
+@import "main.scss";
+@import "style.scss";
+
+.Business_Partners {
+	margin-top: 150px;
+
+	.wrapper {
+		display: grid;
+		justify-content: center;
+		align-items: center;
+
+		.title,
+		.logoContainer {
+			img {
+				user-select: none;
+				pointer-events: none;
+			}
+		}
+
+		.title {
+			display: grid;
+			grid-template-columns: 1fr;
+			justify-content: center;
+			align-items: center;
+
+			h1,
+			svg {
+				/*Centering the container*/
+				grid-area: 1/1;
+				justify-self: center;
+				align-items: center;
+				/*Centering the container*/
+			}
+
+			svg {
+				user-select: none;
+				pointer-events: none;
+				z-index: -1;
+				filter: $Shadow_accentBanner_svg;
+			}
+
+			h1 {
+				color: $Accent1;
+				text-align: center;
+
+				/* BoxShadow */
+				text-shadow: $Shadow_black;
+				font-family: $Inter;
+				font-size: 4rem;
+				font-style: normal;
+				font-weight: 900;
+				line-height: normal;
+				margin-bottom: 25px;
+			}
+		}
+
+		.logoContainer {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			gap: 20px;
+			max-width: 1460px;
+		}
+	}
+}

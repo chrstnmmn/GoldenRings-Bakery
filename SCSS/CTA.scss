@@ -1,0 +1,89 @@
+@import "main.scss";
+@import "style.scss";
+
+.CTA {
+	margin-top: 400px;
+
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-content: center;
+	align-items: center;
+
+	.wrapper,
+	.bg1,
+	.bg2,
+	.elements {
+		/*Centering the container*/
+		grid-area: 1/1;
+		justify-self: center;
+		/*Centering the container*/
+
+		img {
+			pointer-events: none;
+			user-select: none;
+		}
+	}
+
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 5px;
+		h2 {
+			color: $Accent1;
+			text-align: center;
+
+			/* Text Effect */
+			text-shadow: $Shadow_text;
+			font-family: $Inter;
+			font-size: 5rem;
+			font-style: normal;
+			font-weight: 900;
+			line-height: normal;
+		}
+		p {
+			color: $Accent1;
+			text-align: center;
+			font-family: $Inter;
+			font-size: 2.5rem;
+			font-style: normal;
+			font-weight: 300;
+			line-height: normal;
+		}
+		.Button_Pink {
+			margin-top: 15px;
+		}
+	}
+
+	svg {
+		filter: $Shadow_accent_svg;
+
+		translate: 0px 30px;
+	}
+
+	.elements {
+		display: grid;
+		grid-template-columns: 1fr;
+		justify-content: center;
+		align-items: center;
+
+		.coffee1,
+		.donut1 {
+			/*Centering the container*/
+			grid-area: 1/1;
+			justify-self: center;
+			align-self: center;
+			/*Centering the container*/
+
+			pointer-events: none;
+			user-select: none;
+		}
+		.coffee1 {
+			transform: translateX(-100px) translateY(-270px);
+		}
+		.donut1 {
+			transform: translateX(100px) translateY(-210px);
+		}
+	}
+}

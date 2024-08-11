@@ -1,0 +1,137 @@
+@import "main.scss";
+@import "style.scss";
+
+.ratings {
+	margin-top: 200px;
+
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-content: center;
+	align-items: center;
+
+	.wrapper {
+		/*Centering the container*/
+		grid-area: 1/1;
+		justify-self: center;
+		z-index: 1;
+		/*Centering the container*/
+
+		width: 1032px;
+		height: 570px;
+
+		border-radius: 10px;
+		background: $Accent1;
+
+		/* BoxShadow */
+		box-shadow: $Shadow_black;
+
+		display: grid;
+		grid-template-columns: 1fr;
+		justify-content: center;
+		align-items: center;
+
+		.title {
+			/*Centering the container*/
+			grid-area: 1/1;
+			justify-self: center;
+			/*Centering the container*/
+
+			transform: translateY(-280px);
+
+			display: grid;
+			grid-template-columns: 1fr;
+			align-items: center;
+			justify-content: center;
+
+			svg {
+				/*Centering the container*/
+				grid-area: 1/1;
+				/*Centering the container*/
+
+				user-select: none;
+				pointer-events: none;
+				filter: $Shadow_accentBanner_svg;
+				z-index: -1;
+			}
+			h1 {
+				/*Centering the container*/
+				grid-area: 1/1;
+				/*Centering the container*/
+
+				color: $Accent1;
+				text-align: center;
+
+				/* BoxShadow */
+				text-shadow: $Shadow_black;
+				font-family: $Inter;
+				font-size: 64px;
+				font-style: normal;
+				font-weight: 900;
+				line-height: normal;
+				padding-bottom: 20px;
+			}
+		}
+		.reviews {
+			/*Centering the container*/
+			grid-area: 1/1;
+			justify-self: center;
+			/*Centering the container*/
+
+			width: 876px;
+
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+			.stars {
+				img {
+					pointer-events: none;
+					user-select: none;
+				}
+			}
+			.statement {
+				display: flex;
+				flex-direction: column;
+				gap: 50px;
+				p {
+					color: $Accent2;
+					text-align: center;
+
+					/* BoxShadow */
+					text-shadow: $Shadow_black;
+					font-family: $Inter;
+					font-size: 40px;
+					font-style: normal;
+					font-weight: 700;
+					line-height: normal;
+				}
+				h4 {
+					color: $_Main2;
+					text-align: right;
+					font-variant-numeric: slashed-zero;
+
+					/* BoxShadow */
+					text-shadow: $Shadow_black;
+					font-family: $Inter;
+					font-size: 20px;
+					font-style: normal;
+					font-weight: 800;
+					line-height: normal;
+				}
+			}
+		}
+	}
+
+	.background {
+		/*Centering the container*/
+		grid-area: 1/1;
+		justify-self: center;
+		align-self: center;
+		/*Centering the container*/
+
+		/* Elements */
+		filter: $Shadow_accent_svg;
+		translate: 10px 0px;
+	}
+}

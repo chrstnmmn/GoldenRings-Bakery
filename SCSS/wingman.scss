@@ -1,0 +1,105 @@
+@import "main.scss";
+@import "style.scss";
+
+.wingman {
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-content: center;
+	align-items: center;
+
+	margin-top: 200px;
+
+	.wrapper,
+	.bg,
+	.title {
+		/*Centering the container*/
+		grid-area: 1/1;
+		justify-self: center;
+		/*Centering the container*/
+	}
+
+	.wrapper {
+		width: 1167px;
+		height: 537px;
+
+		border-radius: $BorderRd_Sm;
+		background: $Accent1;
+
+		/* BoxShadow */
+		box-shadow: $Shadow_black;
+
+		display: grid;
+		grid-template-columns: 1fr;
+		align-items: center;
+
+		#donuts {
+			/*Centering the container*/
+			grid-area: 1/1;
+			justify-self: center;
+			/*Centering the container*/
+
+			pointer-events: none;
+			user-select: none;
+		}
+
+		.donut1 {
+			transform: translateY(-300px);
+		}
+		.donut2 {
+			transform: translateX(300px) translateY(-100px);
+		}
+		.donut3 {
+			transform: translateX(-300px) translateY(-100px);
+		}
+		.donut4 {
+			transform: translateX(50px) translateY(-10px);
+		}
+		.donut5 {
+			transform: translateX(-150px) translateY(80px);
+		}
+	}
+	.bg {
+		z-index: -1;
+
+		filter: $Shadow_accent_svg;
+	}
+	.title {
+		transform: translateY(290px);
+
+		display: grid;
+		grid-template-columns: 1fr;
+		justify-content: center;
+		align-items: center;
+
+		h3,
+		svg {
+			/*Centering the container*/
+			grid-area: 1/1;
+			justify-self: center;
+			/*Centering the container*/
+		}
+
+		h3 {
+			color: $Accent1;
+			text-align: center;
+
+			/* BoxShadow */
+			text-shadow: $Shadow_black;
+			font-family: $Inter;
+			font-size: 2.4rem;
+			font-style: normal;
+			font-weight: 800;
+			line-height: normal;
+
+			width: 837px;
+			margin-bottom: 30px;
+		}
+
+		svg {
+			pointer-events: none;
+			user-select: none;
+			z-index: -1;
+			filter: $Shadow_accentBanner_svg;
+		}
+	}
+}
