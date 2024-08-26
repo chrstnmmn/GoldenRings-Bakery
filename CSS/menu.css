@@ -130,7 +130,6 @@ body {
   justify-content: center;
   align-items: center;
   width: 970px;
-  height: 222px;
 }
 .menu .categories .items .lists_Products .products {
   display: flex;
@@ -249,7 +248,7 @@ body {
   justify-content: center;
   align-items: center;
   max-width: 910px;
-  gap: 12px;
+  gap: 20px;
 }
 .menu .donutLists .products .products_list .products_items {
   display: flex;
